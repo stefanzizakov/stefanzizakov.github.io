@@ -62,8 +62,7 @@ gsap.from('.box', {
         trigger: '#features .row .col-md-4',
         start: "top 80%",
         end: "+=700",
-        toggleActions: "restart pause resume reset",
-        markers: true
+        toggleActions: "restart pause resume reset"
     },
     duration: 3,
     opacity: 0,
