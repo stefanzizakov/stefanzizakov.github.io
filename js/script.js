@@ -54,16 +54,20 @@ let sections = document.getElementsByClassName('.content');
 
 let boxes = document.getElementsByClassName(".box");
 
+let featRows = document.getElementsByClassName("#features .row");
+
+
 gsap.from('.box', {
     scrollTrigger: {
-        trigger: '.box',
-        start: "top 60%",
-        // end: "+=400",
-        scrub: true,
+        trigger: '#features .row .col-md-4',
+        start: "top 80%",
+        end: "+=700",
+        toggleActions: "restart pause resume reset",
         markers: true
     },
-    duration: 2,
+    duration: 3,
     opacity: 0,
-    y: 50,
-    ease: "elastic"
+    y: 150,
+    ease: "elastic",
+    stagger: 0.25,
 })
