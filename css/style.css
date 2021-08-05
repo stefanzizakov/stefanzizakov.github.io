@@ -6,6 +6,7 @@ body {
     background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
     background-size: cover;
     overflow-x: hidden;
+    font-family: "Titillium Web";
   }
 
   .nav-item {
@@ -22,7 +23,7 @@ body {
 }
 
 .h-500 {
-    height: 900px;
+    height: 700px;
 }
 .h-1000 {
     height: 1300px;
@@ -41,8 +42,36 @@ body {
     margin: 10px;
 }
 
+.transparent-box {
+    text-align: center;
+    padding: 50px 30px;
+}
+
+.professions {
+    border-radius: 20px;
+    padding: 50px 30px;
+    background: rgba(255,255,255,0.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    backdrop-filter: blur(15px);
+}
+
+
+.professions .fa {
+    filter:contrast(150%);
+    background: rgba(255, 255, 255, 0.068);
+    /* box-shadow: 0 10px 25px rgba(0,0,0,0.2); */
+    border-radius: 50%;
+    padding: 15px 25px;
+}
+
 .box p {
     font-size: 13px;
+}
+
+.professions h2 {
+    color: white;
+    font-weight: lighter;
+    padding-top: 10px;
 }
 
 .fa {

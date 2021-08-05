@@ -1,3 +1,4 @@
+
 $(document).scroll(function () {
     var y = $(this).scrollTop();   
     if (y > 100) {
@@ -19,10 +20,9 @@ let sections = document.getElementsByClassName('.content');
            scrollTrigger: { 
             animaton: first, 
             trigger: ".first", 
-            start: "top center",
+            start: "top 75%",
             end: "+=300", 
-            scrub: true, 
-            pin: true, 
+            scrub: true,  
             pinSpacing: false, 
             snap: 1 / (sections.length - 1) 
           }, duration: 1, opacity: 0, xPercent: -100});
@@ -30,10 +30,9 @@ let sections = document.getElementsByClassName('.content');
            scrollTrigger: { 
             animaton: second, 
             trigger: ".second", 
-            start: "top center",
+            start: "top 75%",
             end: "+=300", 
-            scrub: true, 
-            pin: true, 
+            scrub: true,  
             pinSpacing: false, 
             snap: 1 / (sections.length - 1) 
           }, duration: 1, opacity: 0, xPercent: 100});
@@ -41,10 +40,9 @@ let sections = document.getElementsByClassName('.content');
           scrollTrigger: { 
             animaton: third, 
             trigger: ".third", 
-            start: "top center", 
+            start: "top 75%", 
             end: "+=300", 
             scrub: true, 
-            pin: true,
             pinSpacing: false, 
             snap: 1 / (sections.length - 1) }, 
             duration: 1,
@@ -62,7 +60,7 @@ gsap.from('.box', {
         trigger: '#features .row .col-md-4',
         start: "top 80%",
         end: "+=700",
-        toggleActions: "restart pause resume reset"
+        toggleActions: "restart resume resume reset"
     },
     duration: 3,
     opacity: 0,
