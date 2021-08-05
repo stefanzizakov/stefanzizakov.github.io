@@ -68,3 +68,16 @@ gsap.from('.box', {
     ease: "elastic",
     stagger: 0.25,
 })
+
+gsap.from('.transparent-box', {
+    scrollTrigger: {
+        trigger: '.professions',
+        start: "top 65%",
+        toggleActions: "restart resume resume reset"
+    },
+    duration: 0.5,
+    opacity: 0,
+    scale: 0,
+    y: -250,
+    stagger: 0.25
+})

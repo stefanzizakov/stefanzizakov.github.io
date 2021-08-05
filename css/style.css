@@ -6,7 +6,7 @@ body {
     background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
     background-size: cover;
     overflow-x: hidden;
-    font-family: "Titillium Web";
+    font-family: "Roboto";
   }
 
   .nav-item {
@@ -31,6 +31,62 @@ body {
 
 .ox {
     overflow-x: hidden;
+}
+
+#steps .row {
+    position: relative;
+}
+
+.step-1 {
+    padding: 30px;
+    padding-top: 10px !important;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: purple;
+    height: 50vh;
+    overflow-x: hidden;
+}
+
+#step-1::before {
+    content: '1';
+    font-size: 150px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.24);
+}
+
+#step-1 {
+    color: black;
+    padding-top: 5%;
+    padding-left: 5%;
+    position: relative;
+}
+
+.step-2 {
+    align-items: flex-end;
+    padding: 50px;
+    position: absolute;
+    bottom: 5vh;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    background-color: orange;
+    height: 25vh;
+    overflow-x: hidden;
+}
+
+#step-2 {
+    margin-right: 8%;
+    padding: 0;
+}
+
+#step-2::before {
+    content: '2';
+    font-size: 150px;
+    top: 0;
+    right: 5%;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.24);
 }
 
 .box {
